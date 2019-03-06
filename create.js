@@ -19,7 +19,7 @@ export function main(event, context, callback) {
     // - 'createdAt': current Unix timestamp
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
-      noteId: uuid.v1(),
+      notesId: uuid.v1(),
       content: data.content,
       attachment: data.attachment,
       createdAt: Date.now()
