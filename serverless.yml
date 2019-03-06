@@ -5,6 +5,11 @@ plugins:
   - serverless-webpack
   - serverless-offline
 
+# Create our resources with separate CloudFormation templates
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+
 # serverless-webpack configuration
 # Enable auto-packing of external modules
 custom:
