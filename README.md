@@ -83,6 +83,12 @@ To run a function on your local
 $ serverless invoke local --function hello
 ```
 
+To run a function on your local with mock
+
+``` bash
+$ serverless invoke local --function hello --path mocks/hello-event.json
+```
+
 To simulate API Gateway locally using [serverless-offline](https://github.com/dherault/serverless-offline)
 
 ``` bash
